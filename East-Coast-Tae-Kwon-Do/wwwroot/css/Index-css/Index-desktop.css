@@ -1,0 +1,110 @@
+.East-Coast-Header{
+    font-family: 'Kalam', Arial, "Times New Roman";
+    font-weight: bold;
+    font-size: calc(2rem + 2.4vw);
+
+    margin-bottom: 0;
+    margin-top: 20px;
+}
+.sub-header{
+    font-family: 'Kalam', Arial, "Times New Roman";
+    font-size: 25px;
+}
+.master-wrigley-text {
+    padding-left: 40px;
+    padding-right: 40px;
+
+    margin-top: 0;
+}
+.master-wrigley-paragraph{
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.reviews-text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 18px;
+}
+/*CSS for containers*/
+.Heading-Container{
+    margin-top: 100px;
+    margin-bottom: 60px;
+}
+.section-for-about {
+    display: flex;
+    background: linear-gradient(to right, rgba(248,248,248,0.9) 1%,rgba(235,235,235,0.9) 3%,rgba(188,188,188,0.93) 10%,rgba(188,188,188,1) 24%,rgba(188,188,188,1) 79%,rgba(188,188,188,0.99) 80%,rgba(236,236,236,0.9) 96%,rgba(248,248,248,0.9) 100%);    width: 90vw; 
+    align-items: center;
+    
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-top: 200px;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.Master-Wrigley-text-container{
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+    max-width: 670px;
+    padding-left: 10px;
+}
+.East-Coast-Logo-Container{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+.header-custom{
+    z-index: 1000;
+}
+.reviews-container{
+    position: absolute;
+    width: 100%; /* Cover the entire viewport */
+    height: 100%;
+    z-index: 10;
+}
+/*CSS for the images*/
+.East-Coast-Logo{
+    max-width: 100%;
+    height: auto;
+}
+.Norm-read-image{
+    max-width: 35%;
+    height: auto;
+    
+    padding-left: 15px;
+}
+/*CSS for buttons*/
+.learn-more-button{
+    margin-top: 10px;
+    padding: 5px;
+    color: white;
+    text-decoration: none;
+
+    color: #fff;
+    background-color: #3a3a3a;
+    border: 2px solid #2f2f2f;
+    border-radius: 3px;
+    
+    transition: scale .5s, background-color .5s, color .5s, border .5s;
+}
+.learn-more-button:hover{
+    color: #e5e5e5;
+    background-color: #494949;
+    border: 2px solid #4b4b4b;
+    
+    scale: 110%;
+}
+/*CSS for space inbetween stuff*/
+.spacer{
+    padding-top: 100px;
+    padding-bottom: 100px;
+}

@@ -1,0 +1,6 @@
+/* Import header-mobile.css for screens with a maximum width of 435px */
+@import url("Index-mobile.css") screen and (max-width: 435px);
+
+/* Import header-desktop.css for screens with a minimum width of 436px */
+@import url("Index-desktop.css") screen and (min-width: 436px);
+ 

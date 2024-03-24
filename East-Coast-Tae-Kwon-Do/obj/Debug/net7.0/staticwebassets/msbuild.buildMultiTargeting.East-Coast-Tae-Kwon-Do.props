@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="../build/East-Coast-Tae-Kwon-Do.props" />
+</Project>

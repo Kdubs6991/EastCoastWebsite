@@ -1,0 +1,65 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+@{
+    bool isMobileDevice = ViewBag.isMobile ?? false; //defaults to false if the Viewbag is null
+}
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>@ViewData["Title"] - East Coast Tae Kwon Do</title>
+    
+    <link rel="stylesheet" href="~/css/footer.css" />
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" />
+    <link rel="stylesheet" href="~/css/Index-css/Index-default.css" />
+    <link rel="stylesheet" href="~/css/header-css/header-default.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&display=swap" rel="stylesheet">
+
+
+@* note for next class, work on making the website look good for mobile devices as well *@
+
+
+</head>
+<body>
+<header class="header-custom">
+    <div class="left-section">
+        <a class="East-Coast-Title text-decoration-none" asp-controller="Home" asp-action="Index">East Coast <br/>Tae Kwon Do</a>
+    </div>
+    <div class="middle-section">
+        <a class="header-link-custom" asp-controller="Home" asp-action="Index">Home</a>
+        <a class="header-link-custom " asp-controller="Home" asp-action="About">About Us</a>
+    </div>
+
+    <div class="right-section">
+        <a href="https://www.instagram.com/eastcoasttaekwon/?hl=en" target="_blank">
+            <img src="~/Icons/instagram.svg" alt="Instagram Icon" class="header-social-icon">
+        </a>
+        <a href="https://www.facebook.com/ECTKD" target="_blank">
+            <img src="~/Icons/facebook.svg" alt="Facebook Icon" class="header-social-icon">
+        </a>
+        <a href="https://www.youtube.com/channel/UCe5wejih4Tyr9Tha0rg-Prg" target="_blank">
+            <img src="~/Icons/youtube.svg" alt="Youtube Icon" class="header-social-icon">
+        </a>
+    </div>
+
+</header>
+<div class="container body-container">
+    <main role="main" class="pb-3">
+        @RenderBody()
+    </main>
+</div>
+
+<footer class="border-top footer text-muted footer-custom">
+    <div class="container">
+        &copy; 2024 - East_Coast_Tae_Kwon_Do
+    </div>
+</footer>
+<script src="~/lib/jquery/dist/jquery.min.js"></script>
+<script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+<script src="~/js/site.js" asp-append-version="true"></script>
+@await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>
